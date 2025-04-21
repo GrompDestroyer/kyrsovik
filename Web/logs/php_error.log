@@ -1,0 +1,187 @@
+[21-Apr-2025 03:25:00 Europe/Berlin] === Тестовое сообщение ===
+[21-Apr-2025 03:25:00 Europe/Berlin] Это тестовое сообщение для проверки логирования
+[21-Apr-2025 03:25:00 Europe/Berlin] Тестовая ошибка
+[21-Apr-2025 03:25:52 Europe/Berlin] === Тестовое сообщение ===
+[21-Apr-2025 03:25:52 Europe/Berlin] Это тестовое сообщение для проверки логирования
+[21-Apr-2025 03:25:52 Europe/Berlin] Тестовая ошибка
+[21-Apr-2025 03:28:42 Europe/Berlin] === Тестовое сообщение ===
+[21-Apr-2025 03:28:42 Europe/Berlin] Это тестовое сообщение для проверки логирования
+[21-Apr-2025 03:28:42 Europe/Berlin] Тестовая ошибка
+[21-Apr-2025 03:47:43 Europe/Berlin] === Тестовое сообщение ===
+[21-Apr-2025 03:47:43 Europe/Berlin] Это тестовое сообщение для проверки логирования
+[21-Apr-2025 03:47:43 Europe/Berlin] Тестовая ошибка
+[21-Apr-2025 03:47:43 Europe/Berlin] Received JSON data: {"username":"asd","email":"asd@gmail.com","password":"asd","confirm_password":"asd"}
+[21-Apr-2025 03:47:43 Europe/Berlin] Processed data - Username: asd, Email: asd@gmail.com
+[21-Apr-2025 03:47:43 Europe/Berlin] Database connection established
+[21-Apr-2025 03:47:43 Europe/Berlin] Attempting to insert user - Username: root, Email: asd@gmail.com
+[21-Apr-2025 03:47:44 Europe/Berlin] User successfully registered - Username: root
+[21-Apr-2025 03:49:48 Europe/Berlin] === Тестовое сообщение ===
+[21-Apr-2025 03:49:48 Europe/Berlin] Это тестовое сообщение для проверки логирования
+[21-Apr-2025 03:49:48 Europe/Berlin] Тестовая ошибка
+[21-Apr-2025 03:49:48 Europe/Berlin] Received JSON data: {"username":"oihgd","email":"fdio@gmail.com","password":"123","confirm_password":"123"}
+[21-Apr-2025 03:49:48 Europe/Berlin] Processed data - Username: oihgd, Email: fdio@gmail.com
+[21-Apr-2025 03:49:48 Europe/Berlin] Database connection established
+[21-Apr-2025 03:49:48 Europe/Berlin] User already exists error - Username: root, Email: fdio@gmail.com
+[21-Apr-2025 03:51:52 Europe/Berlin] === Тестовое сообщение ===
+[21-Apr-2025 03:51:52 Europe/Berlin] Это тестовое сообщение для проверки логирования
+[21-Apr-2025 03:51:52 Europe/Berlin] Тестовая ошибка
+[21-Apr-2025 03:51:52 Europe/Berlin] Received JSON data: {"username":"oihgd","email":"fdio@gmail.com","password":"123","confirm_password":"123"}
+[21-Apr-2025 03:51:52 Europe/Berlin] Processed data - Username: oihgd, Email: fdio@gmail.com
+[21-Apr-2025 03:51:52 Europe/Berlin] Database connection established
+[21-Apr-2025 03:51:52 Europe/Berlin] User already exists error - Username: root, Email: fdio@gmail.com
+[21-Apr-2025 03:52:26 Europe/Berlin] === Тестовое сообщение ===
+[21-Apr-2025 03:52:26 Europe/Berlin] Это тестовое сообщение для проверки логирования
+[21-Apr-2025 03:52:26 Europe/Berlin] Тестовая ошибка
+[21-Apr-2025 03:52:26 Europe/Berlin] Received JSON data: {"username":"afsg","email":"asgg@gmail.com","password":"123","confirm_password":"123"}
+[21-Apr-2025 03:52:26 Europe/Berlin] Processed data - Username: afsg, Email: asgg@gmail.com
+[21-Apr-2025 03:52:26 Europe/Berlin] Database connection established
+[21-Apr-2025 03:52:26 Europe/Berlin] User already exists error - Username: root, Email: asgg@gmail.com
+[21-Apr-2025 03:52:50 Europe/Berlin] === Тестовое сообщение ===
+[21-Apr-2025 03:52:50 Europe/Berlin] Это тестовое сообщение для проверки логирования
+[21-Apr-2025 03:52:50 Europe/Berlin] Тестовая ошибка
+[21-Apr-2025 03:52:50 Europe/Berlin] Received JSON data: {"username":"afsg","email":"asgg@gmail.com","password":"123","confirm_password":"123"}
+[21-Apr-2025 03:52:50 Europe/Berlin] Processed data - Username: afsg, Email: asgg@gmail.com
+[21-Apr-2025 03:52:50 Europe/Berlin] Database connection established
+[21-Apr-2025 03:52:50 Europe/Berlin] User already exists error - Username: root, Email: asgg@gmail.com
+[21-Apr-2025 03:54:48 Europe/Berlin] === Тестовое сообщение ===
+[21-Apr-2025 03:54:48 Europe/Berlin] Это тестовое сообщение для проверки логирования
+[21-Apr-2025 03:54:48 Europe/Berlin] Тестовая ошибка
+[21-Apr-2025 03:54:48 Europe/Berlin] Received JSON data: {"username":"asd","email":"asd@gmail.com","password":"asd","confirm_password":"asd"}
+[21-Apr-2025 03:54:48 Europe/Berlin] Processed data - Username: asd, Email: asd@gmail.com
+[21-Apr-2025 03:54:48 Europe/Berlin] Database connection established
+[21-Apr-2025 03:54:48 Europe/Berlin] Attempting to insert user - Username: root, Email: asd@gmail.com
+[21-Apr-2025 03:54:48 Europe/Berlin] User successfully registered - Username: root
+[21-Apr-2025 03:57:16 Europe/Berlin] Failed login attempt for user: asd
+[21-Apr-2025 03:58:10 Europe/Berlin] Failed login attempt for user: root
+[21-Apr-2025 04:02:00 Europe/Berlin] PHP Fatal error:  Uncaught ValueError: mb_http_input(): Argument #1 ($type) must be one of "G", "P", "C", "S", "I", or "L" in D:\xamp\htdocs\course\login.php:11
+Stack trace:
+#0 D:\xamp\htdocs\course\login.php(11): mb_http_input('UTF-8')
+#1 {main}
+  thrown in D:\xamp\htdocs\course\login.php on line 11
+[21-Apr-2025 04:02:09 Europe/Berlin] PHP Fatal error:  Uncaught ValueError: mb_http_input(): Argument #1 ($type) must be one of "G", "P", "C", "S", "I", or "L" in D:\xamp\htdocs\course\login.php:11
+Stack trace:
+#0 D:\xamp\htdocs\course\login.php(11): mb_http_input('UTF-8')
+#1 {main}
+  thrown in D:\xamp\htdocs\course\login.php on line 11
+[21-Apr-2025 04:02:58 Europe/Berlin] PHP Fatal error:  Uncaught ValueError: mb_http_input(): Argument #1 ($type) must be one of "G", "P", "C", "S", "I", or "L" in D:\xamp\htdocs\course\login.php:11
+Stack trace:
+#0 D:\xamp\htdocs\course\login.php(11): mb_http_input('UTF-8')
+#1 {main}
+  thrown in D:\xamp\htdocs\course\login.php on line 11
+[21-Apr-2025 04:05:39 Europe/Berlin] PHP Fatal error:  Uncaught ValueError: mb_http_input(): Argument #1 ($type) must be one of "G", "P", "C", "S", "I", or "L" in D:\xamp\htdocs\course\login.php:22
+Stack trace:
+#0 D:\xamp\htdocs\course\login.php(22): mb_http_input('UTF-8')
+#1 {main}
+  thrown in D:\xamp\htdocs\course\login.php on line 22
+[21-Apr-2025 04:06:24 Europe/Berlin] PHP Fatal error:  Uncaught ValueError: mb_http_input(): Argument #1 ($type) must be one of "G", "P", "C", "S", "I", or "L" in D:\xamp\htdocs\course\login.php:22
+Stack trace:
+#0 D:\xamp\htdocs\course\login.php(22): mb_http_input('UTF-8')
+#1 {main}
+  thrown in D:\xamp\htdocs\course\login.php on line 22
+[21-Apr-2025 04:06:28 Europe/Berlin] PHP Fatal error:  Uncaught ValueError: mb_http_input(): Argument #1 ($type) must be one of "G", "P", "C", "S", "I", or "L" in D:\xamp\htdocs\course\login.php:22
+Stack trace:
+#0 D:\xamp\htdocs\course\login.php(22): mb_http_input('UTF-8')
+#1 {main}
+  thrown in D:\xamp\htdocs\course\login.php on line 22
+[21-Apr-2025 04:06:47 Europe/Berlin] === Тестовое сообщение ===
+[21-Apr-2025 04:06:47 Europe/Berlin] Это тестовое сообщение для проверки логирования
+[21-Apr-2025 04:06:47 Europe/Berlin] Тестовая ошибка
+[21-Apr-2025 04:06:47 Europe/Berlin] Received JSON data: {"username":"root","email":"root@gmail.com","password":"123","confirm_password":"123"}
+[21-Apr-2025 04:06:47 Europe/Berlin] Processed data - Username: root, Email: root@gmail.com
+[21-Apr-2025 04:06:47 Europe/Berlin] Database connection established
+[21-Apr-2025 04:06:47 Europe/Berlin] User already exists error - Username: root, Email: root@gmail.com
+[21-Apr-2025 04:10:21 Europe/Berlin] Received JSON data: {"username":"asd","email":"asd@gmail.com","password":"asd","confirm_password":"asd"}
+[21-Apr-2025 04:10:21 Europe/Berlin] Processed data - Username: asd, Email: asd@gmail.com
+[21-Apr-2025 04:10:21 Europe/Berlin] Database connection established
+[21-Apr-2025 04:10:21 Europe/Berlin] Attempting to insert user - Username: root, Email: asd@gmail.com
+[21-Apr-2025 04:10:21 Europe/Berlin] User successfully registered - Username: root
+[21-Apr-2025 04:10:38 Europe/Berlin] Received JSON data: {"username":"asdf","email":"asf@gmail.com","password":"asdf","confirm_password":"asdf"}
+[21-Apr-2025 04:10:38 Europe/Berlin] Processed data - Username: asdf, Email: asf@gmail.com
+[21-Apr-2025 04:10:38 Europe/Berlin] Database connection established
+[21-Apr-2025 04:10:38 Europe/Berlin] User already exists error - Username: root, Email: asf@gmail.com
+[21-Apr-2025 04:10:47 Europe/Berlin] Received raw input: {"username":"asd","password":"asd"}
+[21-Apr-2025 04:10:47 Europe/Berlin] Failed login attempt for user: asd
+[21-Apr-2025 04:11:58 Europe/Berlin] Received JSON data: {"username":"asdf","email":"asf@gmail.com","password":"asdf","confirm_password":"asdf"}
+[21-Apr-2025 04:11:58 Europe/Berlin] Processed data - Username: asdf, Email: asf@gmail.com
+[21-Apr-2025 04:11:58 Europe/Berlin] Database connection established
+[21-Apr-2025 04:11:58 Europe/Berlin] User already exists error - Username: root, Email: asf@gmail.com
+[21-Apr-2025 04:12:17 Europe/Berlin] Received raw input: {"username":"root","password":"$2y$10$DoOpxbpIBQ.XILvuK3rFYeXGPVL/f20xAS36XKjiicza743FXKC1."}
+[21-Apr-2025 04:12:17 Europe/Berlin] Failed login attempt for user: root
+[21-Apr-2025 04:12:21 Europe/Berlin] Received raw input: {"username":"root","password":"asd"}
+[21-Apr-2025 04:12:21 Europe/Berlin] Failed login attempt for user: root
+[21-Apr-2025 04:12:25 Europe/Berlin] Received raw input: {"username":"asd","password":"asd"}
+[21-Apr-2025 04:12:25 Europe/Berlin] Failed login attempt for user: asd
+[21-Apr-2025 04:14:20 Europe/Berlin] Received JSON data: {"username":"test","email":"test@gmail.com","password":"test","confirm_password":"test"}
+[21-Apr-2025 04:14:20 Europe/Berlin] Processed data - Username: test, Email: test@gmail.com
+[21-Apr-2025 04:14:20 Europe/Berlin] Database connection established
+[21-Apr-2025 04:14:20 Europe/Berlin] User already exists error - Username: root, Email: test@gmail.com
+[21-Apr-2025 04:18:07 Europe/Berlin] Received JSON data: {"username":"asd","email":"asd@gmail.com","password":"asd","confirm_password":"asd"}
+[21-Apr-2025 04:18:07 Europe/Berlin] Processed data - Username: asd, Email: asd@gmail.com
+[21-Apr-2025 04:18:07 Europe/Berlin] Database connection established
+[21-Apr-2025 04:18:07 Europe/Berlin] Attempting to insert user - Username: root, Email: asd@gmail.com
+[21-Apr-2025 04:18:07 Europe/Berlin] User successfully registered - Username: root
+[21-Apr-2025 04:18:12 Europe/Berlin] Received raw input: {"username":"asd","password":"asd"}
+[21-Apr-2025 04:18:12 Europe/Berlin] Failed login attempt for user: asd
+[21-Apr-2025 04:20:16 Europe/Berlin] Raw request data: {"username":"asd","email":"asd@gmail.com","password":"asd","confirm_password":"asd"}
+[21-Apr-2025 04:20:16 Europe/Berlin] Decoded data: Array
+(
+    [username] => asd
+    [email] => asd@gmail.com
+    [password] => asd
+    [confirm_password] => asd
+)
+
+[21-Apr-2025 04:20:38 Europe/Berlin] Raw request data: {"username":"asf","email":"asf@gmail.com","password":"asd","confirm_password":"asd"}
+[21-Apr-2025 04:20:38 Europe/Berlin] Decoded data: Array
+(
+    [username] => asf
+    [email] => asf@gmail.com
+    [password] => asd
+    [confirm_password] => asd
+)
+
+[21-Apr-2025 04:20:53 Europe/Berlin] Received raw input: {"username":"asd","password":"asd"}
+[21-Apr-2025 04:20:53 Europe/Berlin] Failed login attempt for user: asd
+[21-Apr-2025 04:22:35 Europe/Berlin] Raw login request data: {"username":"asd","password":"asd"}
+[21-Apr-2025 04:22:35 Europe/Berlin] Decoded login data: Array
+(
+    [username] => asd
+    [password] => asd
+)
+
+[21-Apr-2025 04:24:55 Europe/Berlin] Received JSON data: {"username":"asd","email":"asd@gmail.com","password":"asd","confirm_password":"asd"}
+[21-Apr-2025 04:24:55 Europe/Berlin] Processed data - Username: asd, Email: asd@gmail.com
+[21-Apr-2025 04:24:55 Europe/Berlin] Database connection established
+[21-Apr-2025 04:24:55 Europe/Berlin] Attempting to insert user - Username: root, Email: asd@gmail.com
+[21-Apr-2025 04:24:55 Europe/Berlin] User successfully registered - Username: root
+[21-Apr-2025 04:25:04 Europe/Berlin] Received JSON data: {"username":"asdf","email":"asf@gmail.com","password":"asd","confirm_password":"asd"}
+[21-Apr-2025 04:25:04 Europe/Berlin] Processed data - Username: asdf, Email: asf@gmail.com
+[21-Apr-2025 04:25:04 Europe/Berlin] Database connection established
+[21-Apr-2025 04:25:04 Europe/Berlin] User already exists error - Username: root, Email: asf@gmail.com
+[21-Apr-2025 04:26:24 Europe/Berlin] Received JSON data: {"username":"asdf","email":"asf@gmail.com","password":"asd","confirm_password":"asd"}
+[21-Apr-2025 04:26:24 Europe/Berlin] Processed data - Username: asdf, Email: asf@gmail.com
+[21-Apr-2025 04:26:24 Europe/Berlin] Database connection established
+[21-Apr-2025 04:26:24 Europe/Berlin] Attempting to insert user - Username: root, Email: asf@gmail.com
+[21-Apr-2025 04:26:24 Europe/Berlin] User successfully registered - Username: root
+[21-Apr-2025 04:31:48 Europe/Berlin] Step 1 - Raw JSON data received: {"username":"asd","email":"asd@gmail.com","password":"asd","confirm_password":"asd"}
+[21-Apr-2025 04:31:48 Europe/Berlin] Step 2 - Decoded JSON data: Array
+(
+    [username] => asd
+    [email] => asd@gmail.com
+    [password] => asd
+    [confirm_password] => asd
+)
+
+[21-Apr-2025 04:31:48 Europe/Berlin] Step 3 - Extracted data:
+[21-Apr-2025 04:31:48 Europe/Berlin] Username: [asd]
+[21-Apr-2025 04:31:48 Europe/Berlin] Email: [asd@gmail.com]
+[21-Apr-2025 04:31:48 Europe/Berlin] Password length: 3
+[21-Apr-2025 04:31:48 Europe/Berlin] Confirm password length: 3
+[21-Apr-2025 04:31:48 Europe/Berlin] Step 4 - Database connection established
+[21-Apr-2025 04:31:48 Europe/Berlin] Step 5 - Existing users check. Count: 0
+[21-Apr-2025 04:31:48 Europe/Berlin] Step 6 - Password hashed. Hash length: 60
+[21-Apr-2025 04:31:48 Europe/Berlin] Step 7 - Prepared statement for insert. Username: [asd], Email: [asd@gmail.com]
+[21-Apr-2025 04:31:48 Europe/Berlin] Step 8 - Insert result: Success
+[21-Apr-2025 04:31:48 Europe/Berlin] Registration successful - Username: [asd]
+[21-Apr-2025 04:31:57 Europe/Berlin] Received raw input: {"username":"asd","password":"asd"}
+[21-Apr-2025 04:31:57 Europe/Berlin] Successful login attempt for user: asd

@@ -4,76 +4,119 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Кулинарный помощник</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="main.css">
 </head>
 <body>
     <header>
-        <h1>Кулинарный помощник</h1>
-    </header>
-    <main>
-        <section id="recipe-list">
-            <h2>Рецепты</h2>
-            <ul id="recipes">
-                <!-- Список рецептов будет добавляться здесь -->
-            </ul>
-        </section>
-        <section id="recipe-details" style="display: none;">
-            <h2>Детали рецепта</h2>
-            <div id="recipe-info">
-                <!-- Детали рецепта будут отображаться здесь -->
+        <div class="header-content">
+            <h1>Кулинарный помощник</h1>
+            <div class="auth-buttons">
+                <button id="loginBtn">Войти</button>
+                <button id="registerBtn">Регистрация</button>
+                <button id="logoutBtn" style="display: none;">Выйти</button>
             </div>
-            <button onclick="goBack()">Назад к списку рецептов</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="search-section">
+            <div class="container">
+                <h2>Поиск рецептов</h2>
+                <form id="searchForm" class="search-form">
+                    <div class="form-group">
+                        <input type="text" id="searchInput" name="search" placeholder="Введите название рецепта">
+                        <button type="submit">Поиск</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <section class="recipes-section">
+            <div class="container">
+                <div id="recipeGrid" class="recipe-grid"></div>
+            </div>
+        </section>
+
+        <section class="calculator-section">
+            <div class="container">
+                <h2>Калькулятор калорий блюда</h2>
+                <form id="calorieCalculator" class="calculator-form">
+                    <div id="ingredientsList">
+                        <div class="ingredient-item">
+                            <div class="form-group">
+                                <label>Ингредиент:</label>
+                                <input type="text" class="ingredient-name" placeholder="Название ингредиента" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Количество (г):</label>
+                                <input type="number" class="ingredient-weight" min="1" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Калорийность (ккал/100г):</label>
+                                <input type="number" class="ingredient-calories" min="0" required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="button-group">
+                        <button type="button" onclick="addIngredient()">Добавить ингредиент</button>
+                        <button type="submit">Рассчитать калории</button>
+                    </div>
+                </form>
+                <div class="calculation-result" id="calorieResult" style="display: none;">
+                    <h3>Результат расчета:</h3>
+                    <p>Общее количество калорий: <span id="totalCalories">0</span> ккал</p>
+                    <div id="ingredientBreakdown"></div>
+                </div>
+            </div>
         </section>
     </main>
-    <script src="scripts.js"></script>
+
+    <!-- Модальное окно входа -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeLoginModal">&times;</span>
+            <h2>Вход</h2>
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="loginUsername">Имя пользователя:</label>
+                    <input type="text" id="loginUsername" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="loginPassword">Пароль:</label>
+                    <input type="password" id="loginPassword" name="password" required>
+                </div>
+                <button type="submit">Войти</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Модальное окно регистрации -->
+    <div id="registerModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeRegisterModal">&times;</span>
+            <h2>Регистрация</h2>
+            <form id="registerForm">
+                <div class="form-group">
+                    <label for="registerUsername">Имя пользователя:</label>
+                    <input type="text" id="registerUsername" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="registerEmail">Email:</label>
+                    <input type="email" id="registerEmail" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="registerPassword">Пароль:</label>
+                    <input type="password" id="registerPassword" name="password" required>
+                </div>
+                <div class="form-group">
+                    <label for="confirmPassword">Подтвердите пароль:</label>
+                    <input type="password" id="confirmPassword" name="confirmPassword" required>
+                </div>
+                <button type="submit">Зарегистрироваться</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="js/scripts.js"></script>
 </body>
 </html>
-<section id="register" style="display: none;">
-    <h2>Регистрация</h2>
-    <form id="registerForm">
-        <label for="username">Имя пользователя:</label>
-        <input type="text" id="username" name="username" required>
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-        <label for="password">Пароль:</label>
-        <input type="password" id="password" name="password" required>
-        <button type="submit">Зарегистрироваться</button>
-    </form>
-    <button onclick="goBack()">Назад</button>
-</section>
-<section id="admin-panel" style="display: none;">
-    <h2>Админ-панель</h2>
-    <p>Добро пожаловать, администратор!</p>
-    <button onclick="goBack()">Выйти</button>
-</section>
-<section id="reset-password" style="display: none;">
-    <h2>Восстановление пароля</h2>
-    <form id="resetPasswordForm">
-        <label for="resetEmail">Email:</label>
-        <input type="email" id="resetEmail" name="resetEmail" required>
-        <button type="submit">Восстановить пароль</button>
-    </form>
-    <button onclick="goBack()">Назад</button>
-</section>
-<button onclick="showSection('register')">Регистрация</button>
-<button onclick="showSection('reset-password')">Восстановление пароля</button>
-<button id="adminButton" onclick="showSection('admin-panel')">Админ-панель</button>
-<button id="loginButton">Вход</button>
-
-
-<!-- Модальное окно для входа -->
-<div id="loginModal" class="modal">
-    <div class="modal-content">
-        <span class="close">&times;</span>
-        <h2>Вход</h2>
-        <form id="loginForm">
-            <label for="loginUsername">Имя пользователя:</label>
-            <input type="text" id="loginUsername" name="loginUsername" required>
-            
-            <label for="loginPassword">Пароль:</label>
-            <input type="password" id="loginPassword" name="loginPassword" required>
-            
-            <button type="submit">Войти</button>
-        </form>
-    </div>
-</div>
